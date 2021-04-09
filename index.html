@@ -12,35 +12,18 @@
 <body>
   <div class="jumbotron">
     Bob's House of Pie</div>
-  <!-- <div class="form">
-      <div class="card">
 
-        </div>
-        </div> -->
-  <!-- <div class="dropholder">
-          <p>Select</p>
-          <div class="dropdown">
-            <p><i class="fa fa-foursquare"></i> Please Rate</p>
-          </div>
-          <ul class="menu">
-            <li><i class="fa fa-thumbs-down"></i> Ugly</li>
-            <li><i class="fa fa-thumbs-up"></i> Not bad</li>
-            <li><i class="fa fa-bolt"></i> Ok it's good</li>
-            <li><i class="fa fa-star"></i> Very Nice works</li>
-            <li><i class="fa fa-heart"></i> Wow how you did it</li>
-          </ul>
-        </div> -->
 
   <div class="container">
-    <form id="pick-a-Pizza">
-      <select class="form-select" id="size">
+    <form id="pick-a-pizza">
+      <select class="form-select" name="pieSize"  id="size">
         <option value="0">Please choose how much Bob's Pie you are wanting!</option>
         <option value="9">Bob's Biggin</option>
         <option value="6">Purty Darn Big</option>
         <option value="4">In Duh Middle</option>
         <option value="2">Wee Nub</option>
       </select>
-      <select class="form-select" id="topping1">
+      <select class="form-select" name="top1" id="topping1">
         <option value="0">Please Choose From the items below to add to your Bob's Pie!</option>
         <option value="1">Cheese</option>
         <option value="1">Xtra Cheese</option>
@@ -56,7 +39,7 @@
         <option value="1">Some Fungi (Mushrooms)</option>
         <option value="1">Broccoli</option>
       </select>
-      <select class="form-select" id="topping2">
+      <select class="form-select" name="top2" id="topping2">
         <option value="0">You get to Choose again if you would like.</option>
         <option value="1">Cheese</option>
         <option value="1">Xtra Cheese</option>
@@ -72,7 +55,7 @@
         <option value="1">Some Fungi (Mushrooms)</option>
         <option value="1">Broccoli</option>
       </select>
-      <select class="form-select" id="topping3">
+      <select class="form-select" top3 id="topping3">
         <option value="0">We do it right here at Bob's, go ahead and add one more if you like.</option>
         <option value="1">Xtra Cheese</option>
         <option value="1">Pepperoni</option>
@@ -87,7 +70,7 @@
         <option value="1">Some Fungi (Mushrooms)</option>
         <option value="1">Broccoli</option>
       </select>
-      <div class="output"></div>
+      <div id="output"></div>
 
       <button class="btn btn-success">Build Bob's Pie</button>
     </form>

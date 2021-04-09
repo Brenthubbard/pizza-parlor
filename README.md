@@ -21,14 +21,16 @@
 
 test:testing customer1 object
 code: let customer1 = new Pizza("pepperoni", "cheese", "olive", "weenub");
- result: Pizza {topping1: "pepperoni", topping2: "cheese", topping3: "olive", size: "weenub"}
+ result: Pizza {topping1: 1, topping2: 1, topping3: 1, size: 1, 
+
 
 
 ## Setup/Installation Requirements 
+* goto "https://github.com/Brenthubbard/pizza-parlor"
 
  * Click on the green download code button. Click on the clipboard icon. 
 
- * Open your terminal, navigate to the preffered storage location on your desktop.  
+ * Open your terminal, navigate to the preferred storage location on your desktop.  
 
 * Type git clone and then paste the cloned project.  
 
@@ -41,13 +43,8 @@ code: let customer1 = new Pizza("pepperoni", "cheese", "olive", "weenub");
  
 
  ## Known Bugs  
-
- 
-
- 
-
-* Application was not designed for edge cases.  
-
+* This Application was designed for learning purposes.
+*  BUGS functionality is non-working
 * Will update later.  
 
  
@@ -61,10 +58,7 @@ code: let customer1 = new Pizza("pepperoni", "cheese", "olive", "weenub");
  
 
 ## Contact Information  
-
- 
-
-_YOUR EMAIL*_ 
+_hubbardbrent@hotmail.com*_ 
 
  
 
