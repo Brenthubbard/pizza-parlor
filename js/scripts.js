@@ -1,6 +1,8 @@
-let pizza;
-let pizzaPrice;
-
+// let pizza;
+// let pizzaPrice;
+// let topping1;
+// let topping2;
+// let topping3;
 
 
 function Pizza(topping1, topping2, topping3, size) {
@@ -9,16 +11,21 @@ function Pizza(topping1, topping2, topping3, size) {
   this.topping3 = topping3;
   this.size = size
   this.totalToppings = topping1 + topping2 + topping3;
-  console.log(Pizza)
+  this.pizzaPrice = 0;
 }
 
+console.log(Pizza)
+console.log(this.size)
+console.log(this.totalTopping)
 
+
+
+let customer = new Pizza("pepperoni", "cheese", "olive", "weenub");
+console.log(customer);
 
 Pizza.prototype.pizzaPrice = function () {
-  let totalPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
-
-  console.log(totalPrice);
-  return totalPrice;
+  let pizzaPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
+  console.log(this.totalToppings)
 }
 
 
@@ -26,14 +33,68 @@ Pizza.prototype.pizzaPrice = function () {
 
 // UI Logic
 
-// $(document).ready(function () {
-//   $("form").submit(function (event) {
-//     event.preventDefault();
-//     const topping1 = parseInt($("topping1").val());
-//     const topping2 = parseInt($("topping2").val());
-//     const topping3 = parseInt($("topping3").val());
-//   });
-// });
+$(document).ready(function () {
+  $("form#pick-a-pizza").submit(function (event) {
+    event.preventDefault();
+    let pizzaPrice =
+      new customer(topping1 = parseInt($("#topping1").val()),
+        topping2 = parseInt($("#topping2").val()),
+        topping3 = parseInt($("#topping3").val()),
+        size = parseInt($("#size").val()));
+
+  });
+});
+
+// let totalToppings = new 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // let totalPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
+  // return this.topping1 + this.topping2
+  // console.log(this.size)
+  // if (this.size > 0) {
+  // this.size = pizzaPrice
+  // } if (this.topping1 > 0) {
+
+  // this.topping1 + this.size = this.pizzaPrice
+  // } if (this.topping2 > 0) {
+
+// }
+
+
+  // console.log(totalPrice);
+  // return totalPrice;
+// }
+
+
+
+
 
 
 

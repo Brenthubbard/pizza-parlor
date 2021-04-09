@@ -19,9 +19,10 @@
 
 ## Specs  
 
-test: testing to make sure the object has been created properly.
-code:
- 
+test:testing customer1 object
+code: let customer1 = new Pizza("pepperoni", "cheese", "olive", "weenub");
+ result: Pizza {topping1: "pepperoni", topping2: "cheese", topping3: "olive", size: "weenub"}
+
 
 ## Setup/Installation Requirements 
 
