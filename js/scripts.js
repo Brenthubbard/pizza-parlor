@@ -1,34 +1,22 @@
-// let pizza;
-// let pizzaPrice;
-// let topping1;
-// let topping2;
-// let topping3;
 
 
-function Pizza(topping1, topping2, topping3, size) {
+
+function Pizza(topping1, topping2, topping3, size) {//#3 builds object with values.
   this.topping1 = topping1;
   this.topping2 = topping2;
   this.topping3 = topping3;
   this.size = size
   this.totalToppings = topping1 + topping2 + topping3;
   this.pizzaPrice = 0;
-}
-
-console.log(Pizza)
-console.log(this.size)
-console.log(this.totalTopping)
-
-
-
-let customer = new Pizza("pepperoni", "cheese", "olive", "weenub");
-console.log(customer);
+};
 
 Pizza.prototype.pizzaPrice = function () {
   let pizzaPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
-  console.log(this.totalToppings)
-}
+  pizzaPrice();
+  console.log(pizzPrice)
+  console.log(this.size)
 
-
+};
 
 
 // UI Logic
@@ -36,16 +24,18 @@ Pizza.prototype.pizzaPrice = function () {
 $(document).ready(function () {
   $("form#pick-a-pizza").submit(function (event) {
     event.preventDefault();
-    let pizzaPrice =
-      new customer(topping1 = parseInt($("#topping1").val()),
-        topping2 = parseInt($("#topping2").val()),
-        topping3 = parseInt($("#topping3").val()),
-        size = parseInt($("#size").val()));
-
+    pickedTopping1 = parseInt($("#topping1").val()),//#1 gether info from form
+      pickedTopping2 = parseInt($("#topping2").val()),
+      pickedTopping3 = parseInt($("#topping3").val()),
+      pickedSize = parseInt($("#size").val());
+    console.log(pizzaPrice)
+    let bobPie = new Pizza(pickedTopping1, pickedTopping2, pickedTopping3, pickedSize)//#2 calling constructor and passing values gathered
+    $("#output").text(`Your ${$("#size option:selected").text()} with ${$("#pickedTopping1, #pickedTopping2, #pickedTopping3 option:selected").text()} will be ready shortly`);//#4 calls pizzaPrice after object construction
+    console.log(bobPie)
   });
 });
 
-// let totalToppings = new 
+
 
 
 
@@ -110,4 +100,3 @@ $(document).ready(function () {
 //     });
 //   });
 
-// });
