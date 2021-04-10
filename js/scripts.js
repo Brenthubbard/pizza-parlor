@@ -6,9 +6,7 @@ function Pizza(topping1, topping2, topping3, size) {//#3 builds object with valu
   this.topping2 = topping2;
   this.topping3 = topping3;
   this.size = size
-  this.totalToppings = topping1 + topping2 + topping3 + size;
-  this.pizzaPrice = 0;
-  console.log(Pizza)
+  this.pizzaPrice = topping1 + topping2 + topping3 + size;
 }
 
 Pizza.prototype.pizzaPrice = function () {
@@ -19,44 +17,45 @@ Pizza.prototype.pizzaPrice = function () {
     this.pizzaPrice + 0
   }
 };
-  // pizzaPrice();
-  // console.log(pizzaPrice)
+// pizzaPrice();
+// console.log(pizzaPrice)
 let pizzaPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
 
 
 
-  // if (this.size > 0) {
-  //   this.pizzaPrice === this.size
-  // } if (this.topping1 > 0) {
-  //   this.pizzaPrice + this.topping1;
-  // } else if (this.topping2 > 0) {
-  //   this.pizzaPrice + this.topping2;
-  // } else if (this.topping3 > 0) {
-  //   this.pizzaPrice + this.topping3;
-  // } else {
-  //   this.pizzaPrice += 0;
-  // }
+// if (this.size > 0) {
+//   this.pizzaPrice === this.size
+// } if (this.topping1 > 0) {
+//   this.pizzaPrice + this.topping1;
+// } else if (this.topping2 > 0) {
+//   this.pizzaPrice + this.topping2;
+// } else if (this.topping3 > 0) {
+//   this.pizzaPrice + this.topping3;
+// } else {
+//   this.pizzaPrice += 0;
+// }
 
-  // UI Logic
+// UI Logic
 
-  $(document).ready(function () {
-    $("form#pick-a-pizza").submit(function (event) {
-      event.preventDefault();
-      debugger;
-      pickedTopping1 = parseInt($("#topping1").val()),//#1 gether info from form
-        pickedTopping2 = parseInt($("#topping2").val()),
-        pickedTopping3 = parseInt($("#topping3").val()),
-        pickedSize = parseInt($("#size").val());
-      console.log(pickedTopping1)
-      
+$(document).ready(function () {
+  $("form#pick-a-pizza").submit(function (event) {
+    event.preventDefault();
+    pickedTopping1 = parseInt($("#topping1").val()),//#1 gether info from form
+      pickedTopping2 = parseInt($("#topping2").val()),
+      pickedTopping3 = parseInt($("#topping3").val()),
+      pickedSize = parseInt($("#size").val());
+    console.log(pickedTopping1)
+    let topping1 = $("#topping1")
+    console.log(topping1)
+    
+    let BobPie = new Pizza(pickedTopping1, pickedTopping2, pickedTopping3, pickedSize)//#2 calling constructor and passing values gathered
+    console.log(BobPie)
 
-      let BobPie = new Pizza(pickedTopping1, pickedTopping2, pickedTopping3, pickedSize)//#2 calling constructor and passing values gathered
-
-      $("#output").text(`Your ${$("#size option:selected").text()} pie with ${$("#pickedTopping1 option:selected").text()}, ${$("#pickedTopping2 option:selected").text()}, ${$("#pickedTopping3 option:selected").text()} will be ready shortly and your total will be $. 00`);//#4 calls pizzaPrice after object construction
-      // console.log(BobPie)
-      // $("$output").text()
-    });
+    $("#output").text(`Your ${$("#size option:selected").text()} pie with ${$("#pickedTopping1 option:selected").text()}, ${$("#pickedTopping2 option:selected").text()}, ${$("#pickedTopping3 option:selected").text()} will be ready shortly and your total will be $${BobPie.pizzaPrice}. 00`);//#4 calls pizzaPrice after object construction
+    // console.log(BobPie)
+    // $("$output").text()
   });
+});
 // ${ pizzaPrice() }
 // ${ BobPie.pizzaPrice() }
 
