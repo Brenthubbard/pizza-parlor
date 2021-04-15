@@ -16,13 +16,15 @@
 
   <div class="container">
     <form id="pick-a-pizza">
-      <select class="form-select" name="pieSize"  id="size">
-        <option value="0">Please choose how much Bob's Pie you are wanting!</option>
-        <option value="9">Bob's Biggin</option>
-        <option value="6">Purty Darn Big</option>
-        <option value="4">In Duh Middle</option>
-        <option value="2">Wee Nub</option>
-      </select>
+      <div class="col-lg-4">
+        <select class="form-select" name="pieSize" id="size">
+          <option value="0">Please choose how much Bob's Pie you are wanting!</option>
+          <option value="9">Bob's Biggin</option>
+          <option value="6">Purty Darn Big</option>
+          <option value="4">In Duh Middle</option>
+          <option value="2">Wee Nub</option>
+        </select>
+      </div>
       <select class="form-select" name="top1" id="topping1">
         <option value="0">Please Choose From the items below to add to your Bob's Pie!</option>
         <option value="1">Cheese</option>
@@ -73,6 +75,7 @@
       <div id="output"></div>
 
       <button class="btn btn-success">Build Bob's Pie</button>
+      <button onClick="window.location.reload();" class="btn btn-warning">Refresh Page</button>
     </form>
   </div>
   </div>
@@ -83,3 +86,5 @@
 </body>
 
 </html>
+
+

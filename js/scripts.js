@@ -17,23 +17,12 @@ Pizza.prototype.pizzaPrice = function () {
     this.pizzaPrice + 0
   }
 };
-// pizzaPrice();
-// console.log(pizzaPrice)
+
 let pizzaPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
 
 
 
-// if (this.size > 0) {
-//   this.pizzaPrice === this.size
-// } if (this.topping1 > 0) {
-//   this.pizzaPrice + this.topping1;
-// } else if (this.topping2 > 0) {
-//   this.pizzaPrice + this.topping2;
-// } else if (this.topping3 > 0) {
-//   this.pizzaPrice + this.topping3;
-// } else {
-//   this.pizzaPrice += 0;
-// }
+
 
 // UI Logic
 
@@ -51,13 +40,11 @@ $(document).ready(function () {
     let BobPie = new Pizza(pickedTopping1, pickedTopping2, pickedTopping3, pickedSize)//#2 calling constructor and passing values gathered
     console.log(BobPie)
 
-    $("#output").text(`Your ${$("#size option:selected").text()} pie with ${$("#pickedTopping1 option:selected").text()}, ${$("#pickedTopping2 option:selected").text()}, ${$("#pickedTopping3 option:selected").text()} will be ready shortly and your total will be $${BobPie.pizzaPrice}. 00`);//#4 calls pizzaPrice after object construction
-    // console.log(BobPie)
-    // $("$output").text()
+    $("#output").text(`Your ${$("#size option:selected").text()} pie with ${$("#topping1 option:selected").text()}, ${$("#topping2 option:selected").text()}, ${$("#topping3 option:selected").text()} will be ready shortly and your total will be $${BobPie.pizzaPrice}. 00`);//#4 calls pizzaPrice after object construction
+    $("#answer").empty();
   });
 });
-// ${ pizzaPrice() }
-// ${ BobPie.pizzaPrice() }
+
 
 
 
