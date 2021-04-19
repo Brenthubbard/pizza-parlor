@@ -21,7 +21,7 @@
 ## Specs  
 
 Description: Pizza.prototype.pizzaPrice <br>
-Test: make sure the pizza.prototype is creating the sum of the total price for the topping and size values.<br>
+Test: <br> make sure the pizza.prototype is creating the sum of the total price for the topping and size values.<br>
 Code: <br>
   let testPizza = new Pizza(1, 1, 1, 10);<br>
   let price = testPizza.pizzaPrice();
