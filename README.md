@@ -15,7 +15,8 @@
 
  
 
-## Description This web application is designed to order a pizza.  
+## Description:
+ This web application is designed to allow the user to order a pizza with 3 different toppings if they so choose.  
 
 ## Specs  
 
