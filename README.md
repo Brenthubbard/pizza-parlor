@@ -20,16 +20,16 @@
 
 ## Specs  
 
-Description: Pizza.prototype.pizzaPrice
-Test: make sure the pizza.prototype is creating the sum of the total price for the topping and size values.
-Code: 
-  let testPizza = new Pizza(1, 1, 1, 10);
+Description: Pizza.prototype.pizzaPrice <br>
+Test: make sure the pizza.prototype is creating the sum of the total price for the topping and size values.<br>
+Code: <br>
+  let testPizza = new Pizza(1, 1, 1, 10);<br>
   let price = testPizza.pizzaPrice();
-price;
+price;<br>
 Expected:13
 
-Test:testing customer1 object
-code: let customer1 = new Pizza("pepperoni", "cheese", "olive", "weenub");
+Test:<br> testing customer1 object <br>
+code: <br> let customer1 = new Pizza("pepperoni", "cheese", "olive", "weenub"); <br>
  Expected: Pizza {topping1: 1, topping2: 1, topping3: 1, size: 1, 
 
 
