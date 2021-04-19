@@ -1,7 +1,24 @@
 .jumbotron{
   text-align: center;
   color: black;
-  background-color: burlywood;
+  background-color: #deb887;
+  font-size: x-large;
+  font-weight: 700;
+  font-style: oblique;
 }
 
-
+body{
+  background-color: rgb(97, 78, 105);
+}
+#output {
+  font-size: large;
+  color: rgb(10, 46, 46);
+}
+.form-select{
+  border-color: burlywood;
+  color:blue;
+}
+div{
+  background-color:blanchedalmond ;
+  font-style: italic;
+}

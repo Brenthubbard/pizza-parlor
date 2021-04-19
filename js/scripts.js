@@ -1,111 +1,24 @@
-
-
-
-function Pizza(topping1, topping2, topping3, size) {//#3 builds object with values.
+function Pizza(topping1, topping2, topping3, size) {
   this.topping1 = topping1;
   this.topping2 = topping2;
   this.topping3 = topping3;
-  this.size = size
-  this.pizzaPrice = topping1 + topping2 + topping3 + size;
+  this.size = size;
 }
-
 Pizza.prototype.pizzaPrice = function () {
-  let BobPie = this.topping1 + this.topping2 + this.topping3 + this.size;
-  if ($("#topping1").is(":checked")) {
-    pizzaPrice += 1;
-  } else {
-    this.pizzaPrice + 0
-  }
+  BobPie = this.topping1 + this.topping2 + this.topping3 + this.size;
+  return BobPie;
 };
-
-let pizzaPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
-
-
-
-
-
 // UI Logic
-
 $(document).ready(function () {
   $("form#pick-a-pizza").submit(function (event) {
     event.preventDefault();
-    pickedTopping1 = parseInt($("#topping1").val()),//#1 gether info from form
-      pickedTopping2 = parseInt($("#topping2").val()),
-      pickedTopping3 = parseInt($("#topping3").val()),
-      pickedSize = parseInt($("#size").val());
-    console.log(pickedTopping1)
-    let topping1 = $("#topping1")
-    console.log(topping1)
-    
-    let BobPie = new Pizza(pickedTopping1, pickedTopping2, pickedTopping3, pickedSize)//#2 calling constructor and passing values gathered
-    console.log(BobPie)
-
-    $("#output").text(`Your ${$("#size option:selected").text()} pie with ${$("#topping1 option:selected").text()}, ${$("#topping2 option:selected").text()}, ${$("#topping3 option:selected").text()} will be ready shortly and your total will be $${BobPie.pizzaPrice}. 00`);//#4 calls pizzaPrice after object construction
+    const pickedTopping1 = parseInt($("#topping1").val());
+    const pickedTopping2 = parseInt($("#topping2").val());
+    const pickedTopping3 = parseInt($("#topping3").val());
+    const pickedSize = parseInt($("#size").val());
+    let bobsPie = new Pizza(pickedTopping1, pickedTopping2, pickedTopping3, pickedSize);
+    let price = bobsPie.pizzaPrice();
+    $("#output").text(`Your ${$("#size option:selected").text()} pie with ${$("#topping1 option:selected").text()}, ${$("#topping2 option:selected").text()}, ${$("#topping3 option:selected").text()} will be ready shortly and your total will be $${price}. 00`);
     $("#answer").empty();
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // let totalPrice = this.topping1 + this.topping2 + this.topping3 + this.size;
-  // return this.topping1 + this.topping2
-  // console.log(this.size)
-  // if (this.size > 0) {
-  // this.size = pizzaPrice
-  // } if (this.topping1 > 0) {
-
-  // this.topping1 + this.size = this.pizzaPrice
-  // } if (this.topping2 > 0) {
-
-// }
-
-
-  // console.log(totalPrice);
-  // return totalPrice;
-// }
-
-
-
-
-
-
-
-//downloaded dropdown menu
-
-// $(document).ready(function () {
-
-//   $(".dropdown").click(function () {
-//     $(".menu").toggleClass("showMenu");
-//     $(".menu > li").click(function () {
-//       $(".dropdown > p").html($(this).html());
-//       $(".menu").removeClass("showMenu");
-//     });
-//   });
-
