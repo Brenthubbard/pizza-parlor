@@ -20,18 +20,18 @@
 ## Specs  
 
 Description: Pizza.prototype.pizzaPrice
-test: make sure the pizza.prototype is creating the sum of the total price for the topping and size values.
+Test: make sure the pizza.prototype is creating the sum of the total price for the topping and size values.
 Code: 
   let testPizza = new Pizza(1, 1, 1, 10);
   let price = testPizza.pizzaPrice();
 price;
-expected:13
+Expected:13
 
-test:testing customer1 object
+Test:testing customer1 object
 code: let customer1 = new Pizza("pepperoni", "cheese", "olive", "weenub");
- result: Pizza {topping1: 1, topping2: 1, topping3: 1, size: 1, 
+ Expected: Pizza {topping1: 1, topping2: 1, topping3: 1, size: 1, 
 
-Description: 
+
 
 ## Setup/Installation Requirements 
 * goto "https://github.com/Brenthubbard/pizza-parlor"
